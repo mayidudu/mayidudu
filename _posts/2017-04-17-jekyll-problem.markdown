@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll deploy problem!"
-date:   2017-04-05 09:29:26 +0800
+date:   2017-04-17 06:29:26 +0800
 categories: ruby
 ---
 
