@@ -1,0 +1,20 @@
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input {
+        file {
+                type =&gt; "zmap"
+                path =&gt; ["/home/hadoop/rawdoc/ipv4json/*"]
+                codec =&gt; "json"
+                start_position =&gt; "beginning"
+                sincedb_path =&gt; "/dev/null"
+        }
+}
+output {
+        elasticsearch {
+                hosts =&gt; ["localhost:9200"]
+                index =&gt; "test3"
+                codec =&gt; json
+                template_overwrite =&gt; true
+        }
+
+}
+</code></pre></div></div>
